@@ -4,19 +4,17 @@ import time
 # Insert your CoinMarketCap API key
 API_KEY = 'KEY'
 
-# URL for getting the list of tokens
-url_listings = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
-
-# URL for getting token information
-url_info = "https://pro-api.coinmarketcap.com/v2/cryptocurrency/info"
-
-# Request parameters for the token listings
+# Number of tokens to be checked from top1 MC
 parameters_listings = {
     'limit': 2000,
     'aux': 'platform'
+
+url_listings = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
+
+url_info = "https://pro-api.coinmarketcap.com/v2/cryptocurrency/info"
+
 }
 
-# Request headers
 headers = {
     'Accepts': 'application/json',
     'X-CMC_PRO_API_KEY': API_KEY
